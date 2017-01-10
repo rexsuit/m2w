@@ -143,6 +143,7 @@
 <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/main.js"></script>
 <!-- <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/jquery.stellar.js"></script> -->
 <!-- <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/parallax.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/g/jquery.lazyloadxt@1.0.4(jquery.lazyloadxt.min.js+jquery.lazyloadxt.autoload.min.js+jquery.lazyloadxt.bg.min.js)"></script>
 <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/custom-functions.js"></script>
 
 

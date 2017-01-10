@@ -79,7 +79,7 @@
 <!-- Crew Section -->
 
     <!-- Split Background - Top -->
-    <div class="split-background parallax14 split-background-top" style="background-image: url('<?php the_field('split_image_top') ?>')">
+    <div class="split-background split-background-top" data-bg='<?php the_field('split_image_top') ?>'>
     
         <div class="headingLargeElement headingSection">
             <h1>
@@ -219,7 +219,7 @@
     <!-- END Clients Section -->
 
     <!-- Split Background -->
-    <div class="split-background split-background-bottom" style="background-image: url('<?php the_field('split_image_top') ?>')">
+    <div class="split-background split-background-bottom" data-bg='<?php the_field('split_image_top') ?>'>
         <!-- new project -->
         <section class="new-project no-padding-top ">
             <div class="container">

@@ -74,7 +74,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- custom -->
     <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/custom.css" />
-
+    
 
     <style type="text/css" media="screen, print">
         @font-face {

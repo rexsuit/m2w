@@ -72,7 +72,7 @@
     <!-- End Learn More -->
 
     <!-- Split Background -->
-    <div class="split-background split-background-top parallax14" style="background-image: url('<?php the_field('split_background_top') ?>')">
+    <div class="split-background split-background-top" style="background-image: url('<?php the_field('split_background_top') ?>')">
         <div class="headingLargeElement headingSection">
             <h1>
                 <img src="<?php echo $stylesheet_directory; ?>/images/main_services_graphic1.png">

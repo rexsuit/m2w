@@ -52,7 +52,7 @@
             <!-- Description -->
             <div class="row headingDescription wow fadeIn">
                 <div class="col-sm-6 headingDescription-title">
-                    <h2><img src="<?php echo $stylesheet_directory; ?>/images/orange_symbol.png" class="headingDescription-titleSymbol" alt=""><?php echo get_field('about_section_excerpt_title'); ?></h2>
+                    <h2><img data-src="<?php echo $stylesheet_directory; ?>/images/orange_symbol.png" class="headingDescription-titleSymbol" alt=""><?php echo get_field('about_section_excerpt_title'); ?></h2>
                 </div>
                 <div class="col-sm-6 headingDescription-description">
                     <?php echo get_field('about_section_excerpt_description'); ?>
@@ -61,7 +61,7 @@
         </div>
        
         <!-- Parallax 1 -->
-        <div class="fix-background position-relative homePageParallaxSection1 parallax wow fadeIn" style="background-image:url('<?php echo $parallax_background; ?>');">
+        <div class="fix-background position-relative homePageParallaxSection1 parallax wow fadeIn" data-bg='<?php echo $parallax_background; ?>'>
             <div class="container-fluid position-relative parallaxSection_boundingBox">
                 <div class="row parallaxSection homePageParallax1">
                     <div class="parallaxSection_line"></div>
@@ -145,7 +145,7 @@
         </div>
 
         <!-- Featured Projects Parallax -->
-        <div class="fix-background homePageParallaxSection2 parallax wow fadeIn" style="background-image:url('<?php echo $featured_project_parallax_background; ?>');">
+        <div class="fix-background homePageParallaxSection2 parallax wow fadeIn" data-bg="<?php echo $featured_project_parallax_background; ?>">
             <div class="container-fluid position-relative parallaxSection_boundingBox">
                 <div class="row parallaxSection homePageParallax2">
                     <div class="signature-lines">
