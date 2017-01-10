@@ -652,20 +652,9 @@ $('.parallax-fix').each(function () {
 var IsParallaxGenerated = false;
 function SetParallax() {
     if ($(window).width() > 200 && !IsParallaxGenerated) {
-        $('.parallax1').parallax("50%", 0.1);
-        $('.parallax2').parallax("50%", 0.2);
-        $('.parallax3').parallax("50%", 0.3);
-        $('.parallax4').parallax("50%", 0.4);
-        $('.parallax5').parallax("50%", 0.5);
-        $('.parallax6').parallax("50%", 0.6);
-        $('.parallax7').parallax("50%", 0.7);
-        $('.parallax8').parallax("50%", 0.8);
-        $('.parallax9').parallax("50%", 0.05);
-        $('.parallax10').parallax("50%", 0.02);
-        $('.parallax11').parallax("50%", 0.01);
-        $('.parallax12').parallax("50%", 0.099);
         $('.parallax13').parallax("50%", 1.4);
-        $('.parallax14').parallax("50%", 0.14);
+        $('.split-background-top').parallax("50%", 0.14);
+        $('.split-background-bottom').parallax("50%", 0.14);
         IsParallaxGenerated = true;
     }
 }

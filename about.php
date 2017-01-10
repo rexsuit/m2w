@@ -219,7 +219,7 @@
     <!-- END Clients Section -->
 
     <!-- Split Background -->
-    <div class="split-background split-background-bottom" style="background-image: url('<?php the_field('split_image_bottom') ?>')" data-stellar-background-ratio="0.1">
+    <div class="split-background split-background-bottom" style="background-image: url('<?php the_field('split_image_top') ?>')">
         <!-- new project -->
         <section class="new-project no-padding-top ">
             <div class="container">
