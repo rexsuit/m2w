@@ -652,6 +652,7 @@ $('.parallax-fix').each(function () {
 var IsParallaxGenerated = false;
 function SetParallax() {
     if ($(window).width() > 200 && !IsParallaxGenerated) {
+        //Deleted unused parallax settings. more in original template
         $('.parallax13').parallax("50%", 1.4);
         $('.split-background-top').parallax("50%", 0.14);
         $('.split-background-bottom').parallax("50%", 0.14);

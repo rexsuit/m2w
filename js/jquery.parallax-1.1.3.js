@@ -72,9 +72,9 @@ original code was modified by Igor for Moon Beyond's purposes. Comments appear w
 					if ($this.hasClass("split-background-top")) {
 						$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor - $(window).height() * speedFactor) + "px");
 					} else if ($this.hasClass("split-background-bottom")) {
-						//this sort of works but is not ideal. 4.7 seemed to get it close enough to the end of the image without goin over the edge. Could probably be made better by automatically
+						//this sort of works but is not ideal. 4.6 seemed to get it close enough to the end of the image without goin over the edge. Could probably be made better by automatically
 						//calculating the amount of pixels to add to background position to let it reach the bottom as the window scrolls down, without rolling over to another copy.
-						$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor - $(window).height() * speedFactor * 4.7) + "px");
+						$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor - $(window).height() * speedFactor * 4.6) + "px");
 					} else {
 						$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
 					} 
