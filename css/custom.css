@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #030b14;
 }
 
+section {
+    padding: 0;
+}
+
 .project-img {
     margin: 0 auto;
     max-width: 960px;
@@ -225,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar-nav > li:last-of-type > a {
-        font-size: 1.2em;
+        font-size: 1em;
         border: 2px solid #fff;
         padding: 5px 10px;
         bottom: 2px;
@@ -250,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .page-title {
-    height: 64vh;
+    height: 50vh;
 }
 
 .extra-texture {
@@ -323,6 +327,10 @@ h1, h2, h3, h4, h5, h6 {
 .headingDescription-description a {
     color: #ef4b2f;
     text-transform: uppercase;
+}
+
+.headingDescription-description p {
+    margin: 0 0 6px;
 }
 
 .trailingIcon {
@@ -1130,6 +1138,11 @@ li.nav:first-of-type {
 
     .headingSection h1 { font-size: 8vw; }
     .headingSection h2 { font-size: 4.5vw; }
+}
+
+.highlight-button-white-border,
+.highlight-button-black-border {
+    margin-bottom: 120px;
 }
 
 @media (min-width: 1200px) {

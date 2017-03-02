@@ -1,10 +1,8 @@
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package moon2word
+/*
+
+Template Name: MB Project
+
  */
 
 $header_image = get_field('header_image');

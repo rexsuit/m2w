@@ -1,6 +1,7 @@
 <?php
 /*
     Template Name: Project Page
+    Template Post Type: post, page, product
 */
 $header_image = get_field('header_image');
 $project_title = get_field('project_title');

@@ -99,7 +99,7 @@
 <?php wp_footer(); ?>
 
 <!-- javascript libraries / javascript files set #1 --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/bootstrap.js"></script> 
 <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/bootstrap-hover-dropdown.js"></script>
@@ -115,7 +115,7 @@
 <!-- easy piechart-->
 <!-- <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/jquery.easypiechart.js"></script> -->
 <!-- parallax -->
-<script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/jquery.parallax-1.1.3.js"></script>
+<!-- <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/jquery.parallax-1.1.3.js"></script> -->
 <!--portfolio with sorting tab --> 
 <script type="text/javascript" src="<?php echo $stylesheet_directory; ?>/js/jquery.isotope.min.js"></script>
 <!-- owl slider  -->

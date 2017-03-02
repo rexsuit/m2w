@@ -322,6 +322,7 @@ $(document).ready(function () {
                     $('input[type=text],textarea').each(function () {
                         $(this).val('');
                     })
+                    console.log(result);
                     $("#success").html(result);
                     $("#success").fadeIn("slow");
                     $('#success').delay(4000).fadeOut("slow");
@@ -332,7 +333,6 @@ $(document).ready(function () {
     function validationContactUsForm() {
         var error = true;
         $('#contactusform input[type=text]').each(function (index) {
-
             if (index == 1) {
                 if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
                     $("#contactusform").find("input:eq(" + index + ")").css({"border": "1px solid red"});
@@ -354,173 +354,7 @@ $(document).ready(function () {
         return error;
     }
 
-    $("#notifyme-button").click(function () {
-        var error = validationnotifymeForm();
-        if (error) {
-            $.ajax({
-                type: "POST",
-                url: "notifyme.php",
-                data: $("#notifymeform").serialize(),
-                success: function (result) {
-                    $('input[type=text],textarea').each(function () {
-                        $(this).val('');
-                    })
 
-                    $("#success").html(result);
-                    $("#success").fadeIn("slow");
-                    $('#success').delay(4000).fadeOut("slow");
-                }
-            });
-        }
-    });
-    function validationnotifymeForm() {
-        var error = true;
-        $('#notifymeform input[type=text]').each(function (index) {
-
-            if (index == 0) {
-                if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
-                    $("#notifymeform").find("input:eq(" + index + ")").css({"border": "1px solid red"});
-                    error = false;
-                } else {
-                    $("#notifymeform").find("input:eq(" + index + ")").css({"border": "1px solid #dfdfdf"});
-                }
-            }
-
-        });
-        return error;
-    }
-
-    $("#success-free30daytrial").hide();
-    $("#free30daytrial-button").click(function () {
-        var error = validationfree30daytrialForm();
-        if (error) {
-            $.ajax({
-                type: "POST",
-                url: "free30daytrial.php",
-                data: $("#free30daytrialform").serialize(),
-                success: function (result) {
-                    $('input[type=text],textarea').each(function () {
-                        $(this).val('');
-                    })
-                    $("#success-free30daytrial").html(result);
-                    $("#success-free30daytrial").fadeIn("slow");
-                    $('#success-free30daytrial').delay(4000).fadeOut("slow");
-                }
-            });
-        }
-    });
-    function validationfree30daytrialForm() {
-        var error = true;
-        $('#free30daytrialform input[type=text]').each(function (index) {
-
-            if (index == 1) {
-                if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
-                    $("#free30daytrialform").find("input:eq(" + index + ")").css({"border": "1px solid red"});
-                    error = false;
-                } else {
-                    $("#free30daytrialform").find("input:eq(" + index + ")").css({"border": "1px solid #dfdfdf"});
-                }
-            }
-            else if (index == 0) {
-                if ($(this).val() == null || $(this).val() == "") {
-                    $("#free30daytrialform").find("input:eq(" + index + ")").css({"border": "1px solid red"});
-                    error = false;
-                }
-                else {
-                    $("#free30daytrialform").find("input:eq(" + index + ")").css({"border": "1px solid #dfdfdf"});
-                }
-            }
-        });
-        return error;
-    }
-
-
-    $("#event-button").click(function () {
-        var error = validationeventForm();
-        if (error) {
-            $.ajax({
-                type: "POST",
-                url: "rsvp.php",
-                data: $("#eventform").serialize(),
-                success: function (result) {
-                    $('input[type=text],textarea').each(function () {
-                        $(this).val('');
-                    })
-                    $("#success").html(result);
-                    $("#success").fadeIn("slow");
-                    $('#success').delay(4000).fadeOut("slow");
-                }
-            });
-        }
-    });
-    function validationeventForm() {
-        var error = true;
-        $('#eventform input[type=text]').each(function (index) {
-
-            if (index == 0) {
-                if ($(this).val() == null || $(this).val() == "") {
-                    $("#eventform").find("input:eq(" + index + ")").css({"border": "1px solid red"});
-                    error = false;
-                }
-                else {
-                    $("#eventform").find("input:eq(" + index + ")").css({"border": "1px solid #dfdfdf"});
-                }
-            }
-        });
-        return error;
-    }
-
-    $("#careers-button").click(function () {
-        var error = validationcareersForm();
-        if (error) {
-            $.ajax({
-                type: "POST",
-                url: "careers.php",
-                data: $("#careersform").serialize(),
-                success: function (result) {
-                    $('input[type=text],textarea').each(function () {
-                        $(this).val('');
-                    })
-                    $("#success").html(result);
-                    $("#success").fadeIn("slow");
-                    $('#success').delay(4000).fadeOut("slow");
-                }
-            });
-        }
-    });
-    function validationcareersForm() {
-        var error = true;
-        $('#careersform input[type=text]').each(function (index) {
-
-            if (index == 1) {
-                if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
-                    $("#careersform").find("input:eq(" + index + ")").css({"border": "1px solid red"});
-                    error = false;
-                } else {
-                    $("#careersform").find("input:eq(" + index + ")").css({"border": "1px solid #dfdfdf"});
-                }
-            }
-            else if (index == 0) {
-                if ($(this).val() == null || $(this).val() == "") {
-                    $("#careersform").find("input:eq(" + index + ")").css({"border": "1px solid red"});
-                    error = false;
-                }
-                else {
-                    $("#careersform").find("input:eq(" + index + ")").css({"border": "1px solid #dfdfdf"});
-                }
-            }
-            else if (index == 2) {
-                if ($(this).val() == null || $(this).val() == "") {
-                    $("#careersform").find("input:eq(" + index + ")").css({"border": "1px solid red"});
-                    error = false;
-                }
-                else {
-                    $("#careersform").find("input:eq(" + index + ")").css({"border": "1px solid #dfdfdf"});
-                }
-            }
-        });
-        return error;
-    }
     /*==============================================================*/
     //FORM TO EMAIL - END CODE
     /*==============================================================*/
@@ -592,37 +426,9 @@ $(window).scroll(function () {
     } else {
         $('nav').removeClass('shrink-nav');
     }
-
-    //Animate Elements in view position
-    if (isScrolledIntoView('.chart')) {
-        if (inViewchart == false) {
-            inViewchart = true;
-
-            $(".chart").each(function () {
-                try {
-                    $(this).data('easyPieChart').update(0);
-                    $(this).data('easyPieChart').update($(this).attr("data-percent"));
-                }
-                catch (ex) {
-                }
-            });
-
-            $(".chart2").each(function () {
-                try {
-                    $(this).data('easyPieChart').update(0);
-                    $(this).data('easyPieChart').update($(this).attr("data-percent"));
-                }
-                catch (ex) {
-                }
-            });
-        }
-    }
-
-  
-
-
-
 });
+
+
 // Resize Header Menu
 function SetResizeHeaderMenu() {
     var width = jQuery('nav.navbar').children('div.container').width();
