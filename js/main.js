@@ -1,3 +1,5 @@
+(function ($){
+
 var $portfolio;
 var $masonry_block;
 var $portfolio_selectors;
@@ -614,3 +616,5 @@ $(document).ready(function () {
         }
     });
 });
+
+})(jQuery);
