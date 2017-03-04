@@ -46,23 +46,23 @@
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/animate.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- bootstrap --> 
-    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/bootstrap.css" /> -->
     <!-- et line icon --> 
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/et-line-icons.css" /> -->
-    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/fontello.css" />
+<!--     <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/fontello.css" />
     <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/fontello-codes.css" />
     <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/fontello-embedded.css" />
     <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/fontello-ie7.css" />
-    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/fontello-ie7-codes.css" />
+    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/fontello-ie7-codes.css" /> -->
     <!-- revolution slider -->
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/extralayers.css" /> -->
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/settings.css" /> -->
     <!-- magnific popup -->
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/magnific-popup.css" /> -->
     <!-- owl carousel -->
-    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/owl.carousel.css" />
+<!--     <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/owl.carousel.css" />
     <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/owl.transitions.css" />
-    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/full-slider.css" />
+    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/full-slider.css" /> -->
     <!-- text animation -->
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/text-effect.css" /> -->
     <!-- hamburger menu  -->
