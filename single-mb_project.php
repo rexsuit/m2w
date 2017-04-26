@@ -2,6 +2,7 @@
 /*
 
 Template Name: MB Project
+Template Post Type: post, page, product, MB Project
 
  */
 
@@ -17,14 +18,14 @@ get_header(); ?>
 
             <!-- next project -->
             <div class="next-project">
-                <?php $next_post_id = next_post_link_plus(array('orderby' => 'menu_order', 'order_2nd' => 'post_date', 'return' => 'id', 'loop' => true)); ?>
+                <?php $next_post_id = next_post_link_plus(array('order_by' => 'menu_order', 'return' => 'id', 'loop' => true)); ?>
                 <a href="<?php echo get_permalink($next_post_id) ?>"><img src="<?php echo $stylesheet_directory;; ?>/images/next-project.png" class="next-project-img" alt="Next Project"><span>Next Project</span><!-- next project image --><?php echo get_the_post_thumbnail($next_post_id, "medium"); ?><!-- end next project image --></a>
             </div>
             <!-- end next project -->
             
             <!-- previous project -->
             <div class="previous-project">
-                <?php $previous_post_id = previous_post_link_plus(array('orderby' => 'menu_order', 'order_2nd' => 'post_modified', 'return' => 'id', 'loop' => true)); ?>
+                <?php $previous_post_id = previous_post_link_plus(array('order_by' => 'menu_order', 'return' => 'id', 'loop' => true)); ?>
                 <a href="<?php echo get_permalink($previous_post_id) ?>"><!-- previous project image --><?php echo get_the_post_thumbnail($previous_post_id, "medium"); ?><!-- end previous project image --><img src="<?php echo $stylesheet_directory; ?>/images/previous-project.png" class="previous-project-img" alt="Previous Project"><span>Previous Project</span></a>
             </div>
             <!-- end previous project -->
@@ -35,7 +36,7 @@ get_header(); ?>
         <!-- Header Image -->
         <?php if ( $header_image ) :  ?>
         <section class="project-img">
-            <img class="fade-in fadeInUp" src="<?php echo $header_image['url']; ?>" alt="<?php echo $header_image['alt']; ?>"/>                 
+            <img class="fade-in" src="<?php echo $header_image['url']; ?>" alt="<?php echo $header_image['alt']; ?>"/>                 
         </section>
         <?php endif; ?>
         <!-- End Header Image -->
@@ -68,8 +69,8 @@ get_header(); ?>
             <div class="container">
                 <div class="row project-content">
                     <div class="col-md-7 col-sm-10 center-col text-center text-med">
-                        <h6 class="wow fadeInUp animated"><strong class="black-text"><?php echo $project_title; ?></strong></h6>
-                        <p class="wow fadeInUp animated"><?php the_field('project_categories') ?></p>
+                        <h6 class="wow fadeIn animated"><strong class="black-text"><?php echo $project_title; ?></strong></h6>
+                        <p class="wow fadeIn animated"><?php the_field('project_categories') ?></p>
                     </div>
                 </div>
             </div>
@@ -84,7 +85,7 @@ get_header(); ?>
                 <div class="project-img">
 
                 <?php foreach( $images as $image ): ?>
-                        <img class="wow fadeInUp animated" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <img class="wow fadeIn animated" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                 <?php endforeach; ?>
 
                 </div>
@@ -95,7 +96,7 @@ get_header(); ?>
         <!-- Description Section -->
         <section class="description">
             <div class="container projectsContainer">
-                <div class="row">
+                <div class="row wow fadeIn animated">
                     <div class="col-xs-8 col-sm-2 sidebarTitle hidden-xs ">
                         
                         <h2><img src="<?php echo $stylesheet_directory;; ?>/images/orange_symbol.png" class="headingDescription-titleSymbol" alt="">Case Study</h2>

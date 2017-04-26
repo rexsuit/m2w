@@ -103,7 +103,7 @@ get_header(); ?>
             <div class="row center-col text-center wow fadeInUp">
                 <div class="separator-line bg-yellow no-margin-top margin-five"></div>
                 <h5 class="wow fadeInDown"><?php the_field('next_page_blurb') ?></h5>
-                <a class="btn highlight-button-black-border margin-four no-margin-bottom wow fadeInUp" href="<?php the_field('next_page_link') ?>"><?php the_field('next_page_button_text') ?></a>
+                <a class="btn highlight-button-black-border wow fadeInUp" href="<?php the_field('next_page_link') ?>"><?php the_field('next_page_button_text') ?></a>
             </div>
         </div>
     </section>

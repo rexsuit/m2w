@@ -37,6 +37,7 @@ section {
     max-width: 960px !important;
     font-size: 16px;
     color: #030b14;
+    margin: 90px auto;
 }
 
 .projectsContainer i {
@@ -624,6 +625,10 @@ li.nav:first-of-type {
 
 .split-background .new-project h5 {
     color: #fff;
+}
+
+.split-background .btn {
+    margin-bottom: 90px;
 }
 
 @media (max-width: 767px){
