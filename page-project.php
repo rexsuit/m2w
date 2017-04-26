@@ -9,7 +9,6 @@ $stylesheet_directory = get_stylesheet_directory_uri();
 
 get_header(); ?>
 
-
         <!-- next/previous project -->
         <div class="next-previous-project xs-display-none">
 

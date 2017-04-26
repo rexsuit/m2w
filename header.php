@@ -15,12 +15,12 @@
 <?php $stylesheet_directory = get_stylesheet_directory_uri(); ?>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <meta name="description" content="Moon Beyond - Taking you further">
     <meta name="keywords" content="">
-    <meta charset="utf-8">
+    <!-- <meta charset="utf-8"> -->
     <meta name="author" content="Moon Beyond">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
 
@@ -42,9 +42,31 @@
     <link rel="icon" type="image/png" href="<?php echo $stylesheet_directory; ?>/favicons/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="<?php echo $stylesheet_directory; ?>/favicons/favicon-16x16.png" sizes="16x16">
     <link rel="mask-icon" href="<?php echo $stylesheet_directory; ?>/favicons/safari-pinned-tab.svg" color="#ef4b2f">
+    <!-- fonts -->
+    <style type="text/css" media="screen, print">
+        @font-face {
+            font-family: "OCR-A-STD-Regular";
+            src: url("<?php echo $stylesheet_directory; ?>/fonts/ocr-a-regular.woff");
+        }
+
+        @font-face {
+            font-family: "Proxima Nova Condensced";
+            src: url("<?php echo $stylesheet_directory; ?>/fonts/ProximaNovaCond-Regular.woff");
+        }
+
+        @font-face {
+            font-family: "Proxima Nova Condensced Light";
+            src: url("<?php echo $stylesheet_directory; ?>/fonts/ProximaNovaCond-Light.woff");
+        }
+
+        @font-face {
+            font-family: "Proxima Nova Condensced Semibold";
+            src: url("<?php echo $stylesheet_directory; ?>/fonts/ProximaNovaCond-Semibold.woff");
+        }
+    </style>
     <!-- animation --> 
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/animate.css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
     <!-- bootstrap --> 
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/bootstrap.css" /> -->
     <!-- et line icon --> 
@@ -69,35 +91,13 @@
     <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/menu-hamburger.css" /> -->
     <?php wp_head(); ?>
     <!-- responsive -->
-    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/responsive.css" />
+    <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/responsive.css" /> -->
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
     <!-- custom -->
-    <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/custom.css" />
+    <!-- <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/custom.css" /> -->
 
 
-    <style type="text/css" media="screen, print">
-        @font-face {
-          font-family: "OCR-A-STD-Regular";
-          src: url("<?php echo $stylesheet_directory; ?>/fonts/ocr-a-regular.ttf");
-      }
-
-      @font-face {
-          font-family: "Proxima Nova Condensced";
-          src: url("<?php echo $stylesheet_directory; ?>/fonts/ProximaNovaCond-Regular.otf");
-      }
-
-      @font-face {
-          font-family: "Proxima Nova Condensced Light";
-          src: url("<?php echo $stylesheet_directory; ?>/fonts/ProximaNovaCond-Light.otf");
-      }
-
-      @font-face {
-          font-family: "Proxima Nova Condensced Semibold";
-          src: url("<?php echo $stylesheet_directory; ?>/fonts/ProximaNovaCond-Semibold.otf");
-      }
-  }
-</style>
 
 <!--[if IE]>
     <link rel="stylesheet" href="<?php echo $stylesheet_directory; ?>/css/style-ie.css" />

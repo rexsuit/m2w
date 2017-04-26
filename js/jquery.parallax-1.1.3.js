@@ -59,7 +59,7 @@ original code was modified by Igor for Moon Beyond's purposes. Comments appear w
 				var top = $element.offset().top;
 				var height = getHeight($element);
 
-				console.log(top + height + " is the length to bottom of " + $this.attr('class') + " " + pos + " is the position of window scroll.\n" + firstTop + " is the offset to the top of the parallax thing" + "\n" + $(window).height() + " is the window height and " + $(window).height() * speedFactor + " is the amount to move down for the window height." + "\n" + Math.round((firstTop - pos) * speedFactor - $(window).height() * speedFactor) + "px");
+				// console.log(top + height + " is the length to bottom of " + $this.attr('class') + " " + pos + " is the position of window scroll.\n" + firstTop + " is the offset to the top of the parallax thing" + "\n" + $(window).height() + " is the window height and " + $(window).height() * speedFactor + " is the amount to move down for the window height." + "\n" + Math.round((firstTop - pos) * speedFactor - $(window).height() * speedFactor) + "px");
 
 				// Check if totally above or totally below viewport
 				if (top + height < pos || top > pos + windowHeight) {
@@ -76,10 +76,10 @@ original code was modified by Igor for Moon Beyond's purposes. Comments appear w
 						//calculating the amount of pixels to add to background position to let it reach the bottom as the window scrolls down, without rolling over to another copy.
 						$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor - $(window).height() * speedFactor * 4.6) + "px");
 					} else {
-						$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
+						$this.css({'backgroundPosition': xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px", 'backgroundSize': 'cover', 'height': '50vh'});
 					} 
 				} else {
-			    	$this.css('backgroundPosition','');
+			    	$this.css({'height':'50vh', 'backgroundSize':'cover'});
 				}
 				
 			});
