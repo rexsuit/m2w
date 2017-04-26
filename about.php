@@ -110,29 +110,10 @@
                     </div>
                 <?php endwhile; endif; ?>                
             </div>
-            <div class="row">
+            <div class="row crewDescription">
                 <div class="col-xs-12">
                     <p><?php the_field('crew_description') ?></p>
                 </div>
-            </div>
-            
-        </div>
-        
-    </section>
-    <!-- END Crew Section -->
-
-    <!-- Mission Statement -->
-    <div class="missionStatementSection">
-        <div class="container text-center">
-            <div class="row headingSection">
-                <div class="col-xs-12 headingLargeElement">
-                    <h1><img src="<?php echo $stylesheet_directory; ?>/images/label-numbers-about02.png"><?php the_field('mission_statement_heading') ?></h1>
-                    <h2><?php the_field('mission_statement_subheading') ?></h2>
-                    
-                </div>
-            </div>
-            <div class="row missionStatementDescription">
-                <p class="col-md-7 col-sm-12 center-col"><?php the_field('mission_statement_description') ?></p>
             </div>
 
             <!-- Tab Row -->
@@ -173,11 +154,11 @@
                 </div>
             </div>
             <!-- End Tab Row -->
-
-                
+            
         </div>
-    </div>
-    <!-- END Mission Statement -->
+        
+    </section>
+    <!-- END Crew Section -->
 
     <!-- Parallax -->
     <div class="fix-background parallax aboutPageParallaxSection" style="background-image:url('<?php the_field('parallax_section_image') ?>');">

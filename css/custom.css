@@ -1055,7 +1055,29 @@ li.nav:first-of-type {
     background-color: #030b14;
 }
 
+.crewDescription {
+    margin-bottom: 4vw;
+}
+
 .crewSection h5 {
+    color: #fff;
+}
+
+.crewSection .tabContainer {
+    margin-bottom: 6vw;
+}
+
+.crewSection .nav-tabs > li > a {
+    color: #fff;
+    border-bottom: 0px solid currentColor;
+}
+
+.crewSection .nav-tabs > li.active > a {
+    color: #fff;
+    border-bottom: 1px solid currentColor;
+}
+
+.crewSection .nav-tabs > li:hover > a {
     color: #fff;
 }
 
